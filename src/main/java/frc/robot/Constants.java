@@ -1,31 +1,32 @@
 package frc.robot;
 
 public final class Constants {
-  public static class OperatorConstants {
-    public static final int kDriverControllerPort = 0;
-  }
-
-  public static class IntakeConstants {
-    public static final int m1Id = 0;
-    public static final int m2Id = 1;
-  
-    public static enum IntakeState {
-      INTAKE(0.5),
-      OUTTAKE(-0.5),
-      OFF(0);
-
-      public final double speed;
-      IntakeState(double speed) {
-        this.speed = speed;
-      }
-    }
-  }
-
-  public static class JoystickConstants {
+    public static class Ports {
     public static final class Secondary {
-      public static final int port = 1;
-      public static final int intake = 1;
-      public static final int outtake = 2;
+      public static final int PORT = 1;
+      public static final int SHOOT = 1;
     }
+  }
+
+  public static class Ids {
+    public static final int SHOOTER_ARM = 0;
+  }
+
+  public static class ArmConstants {
+    public static final double kP = 0;
+    public static final double kI = 0;
+    public static final double kD = 0;
+
+    public static final double kSVolts = 0;
+    public static final double kGVolts = 0;
+    public static final double kVVoltSecondPerRad = 0;
+    public static final double kAVoltSecondSquaredPerRad = 0;
+
+    public static final double kMaxVelocityRadPerSecond = 0;
+    public static final double kMaxAccelerationRadPerSecSquared = 0;
+
+    // The offset of the arm from the horizontal in its neutral position,
+    // measured from the horizontal
+    public static final double kArmOffsetRads = 0;
   }
 }
